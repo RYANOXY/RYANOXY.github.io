@@ -1,12 +1,25 @@
 /* setup */
 
 body {
-    background-color: black;
+    background-color: rgb(209, 10, 10);
     color:azure;
     margin: 0px;
     padding: 0px;
     font-size: 20px;
     line-height: 21px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: fracture;
+    src: url(frakturef-bold.woff);
+}
+@font-face {
+    font-family: machina;
+    src: url(PPNeueMachina-InktrapThin.woff);
+}
+@font-face {
+    font-family: machina-reg;
+    src: url(PPNeueBit-Bold.woff);
 }
 
 div {
@@ -16,44 +29,66 @@ div {
 img {
     width: 100%;
 }
+div.frankenstein {
+    position: absolute; top: 2200px;
+    background-attachment: ;
+    z-index: -20;
+}
+ 
 
 /* typography */
 
 div.largetext {
-    font-size: 100px;
-    line-height: 90px;
+    font-size: 190px;
+    line-height: 200px;
 }
 
+div.largishtext {
+    font-size: 100px;
+    line-height: 100px;
+}
+
+div.biggertext {
+    font-size: 100px;
+    line-height: 70px;
+}
 div.mediumtext {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 35px;
 }
 
 div.smalltext {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 30px;
+    line-height: 25px;
 }
 
-div.serif {
-    font-family:'Times New Roman', Times, serif;
+div.heading {
+    font-family: 'fracture';
 }
 
 div.sans {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'machina-reg';
 }
 
 div.mono {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'machina';
 }
 
+div.title {
+    top: 100px;
+    margin-top: 35%;
+    margin-bottom: 100px ;
+    text-align: center;
+    position: relative;
+}
 /* colours */
 
 div.textblue {
     color: blue;
 }
 
-div.textred{
-    color: rebeccapurple
+div.textyellow{
+    color: rgb(255, 193, 23)
 }
 
 div.bggray {
@@ -62,6 +97,10 @@ div.bggray {
 
 div.bgwhite {
     background-color: azure;
+}
+
+div.textblack {
+    color: black;
 }
 
 /* widths */
@@ -90,6 +129,10 @@ div.w50 {
     width: 50%;
 }
 
+div.w45 {
+    width: 45%;
+}
+
 div.w40 {
     width: 40%;
 }
@@ -104,4 +147,87 @@ div.w25 {
 
 div.w20 {
     width: 20%;
+}
+/* design */
+
+div.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+div.col {
+    height: 100%;
+    display: table;
+    float: left;
+    vertical-align: middle;
+    padding: 2%;
+}
+
+div.header {
+   width: 100%;
+   height: 80px;
+   display: block;
+   display: flex;
+   margin-top: 15px;
+   align-items: center ;
+   justify-content: space-between;
+   padding: 30px 5%;
+}
+
+
+div.navigation {
+    border-style: solid;
+    border-color: rgb(255, 209, 81);
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+div.mountain {
+    position: absolute; top: 12%;
+    z-index: -5;
+    margin-top:0px;
+    background-attachment: fixed;
+}
+
+div.lightning {
+    position: absolute; top: 0%;
+    z-index: -10;
+}
+
+div.body {
+    display: flex;
+    flex-wrap: wrap
+}
+
+div.imagebox {
+    margin-top: 400px;
+}
+div.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+div.middle {
+    margin-top: 300px;
+}
+
+div.height { 
+    border-top: 40px;
+}
+
+div.text {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+div.side {
+    margin-left: auto;
+}
+
+div.right { 
+    margin-right: 150px;
 }
